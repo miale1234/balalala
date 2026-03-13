@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Agenda Telefonică</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -9,9 +10,32 @@
 
 <h1>Agenda Telefonică</h1>
 
-<a href="view.php">Vezi Contactele</a>
-<br><br>
-<a href="add.php">Adaugă Contact</a>
+<h3>Adaugă Contact</h3>
+
+<input type="text" id="nume" placeholder="Nume">
+<input type="text" id="telefon" placeholder="Telefon">
+<input type="text" id="email" placeholder="Email">
+
+<button onclick="addContact()">Adaugă</button>
+
+<h3>Lista Contacte</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Nume</th>
+<th>Telefon</th>
+<th>Email</th>
+<th>Acțiuni</th>
+</tr>
+</thead>
+
+<tbody id="contactList"></tbody>
+
+</table>
+
+<script src="script.js"></script>
 
 </body>
 </html>
